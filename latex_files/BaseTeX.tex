@@ -7,8 +7,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 
+% Fonte do documento
+ \renewcommand{\familydefault}{\sfdefault}
+
 % Adicionar diretório de imagens
-\graphicspath{ {images/} }
+\graphicspath{ {../images/} }
 
 % Retirar numeração das páginas
 \pagenumbering{gobble}
@@ -26,5 +29,5 @@
 }
 
 \begin{document}
-	\input{Body}
+	\input{../latex_files/Body}
 \end{document}

@@ -1,6 +1,6 @@
 compile:
-	mkdir output &
-	cd output && pdflatex ../latex_models/BaseTeX.tex &
+	@if [ ! -d "./output" ]; then mkdir output; fi&
+	cd output && pdflatex ../latex_files/BaseTeX.tex &
 
 clean:
 	rm -rf *.aux *.log *.nav *.out *.pdf *.snm *.toc ./output &
