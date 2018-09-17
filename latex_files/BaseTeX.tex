@@ -1,0 +1,30 @@
+\documentclass[16pt]{article}
+
+% Pacotes
+\usepackage{lscape}
+\usepackage{ragged2e}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+% Adicionar diretório de imagens
+\graphicspath{ {images/} }
+
+% Retirar numeração das páginas
+\pagenumbering{gobble}
+
+% Criar método Certificado
+\newcommand\certificado[8]{%
+  \def\NOME{#2}%
+  \def\NUMERO{#3}%
+  \def\ATIVIDADE{#4}%
+  \def\DIA{#5}%
+  \def\HINICIO{#6}%
+  \def\HFIM{#7}%
+  \def\DURACAO{#8}%
+  \input{#1}%
+}
+
+\begin{document}
+	\input{Body}
+\end{document}
